@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { emptyLink } from "../../utils/utils";
+import { HashLink } from "react-router-hash-link";
 import "./welcomebanner.css";
 
 export default function WelcomeBanner() {
@@ -20,15 +20,23 @@ export default function WelcomeBanner() {
         <div className="row text-center">
           <div className="banner-buttons">
             <div className="col-sm-1 col-md-1 col-sm-offset-5 col-md-offset-5">
-              <Link to={emptyLink} className="btn btn-default btn-border">
+              <HashLink
+                smooth
+                to="/#about"
+                className="btn btn-default btn-border"
+              >
                 Info
-              </Link>
+              </HashLink>
             </div>
 
             <div className="col-sm-1 col-md-1">
-              <Link to={emptyLink} className="btn btn-default btn-border">
+              <HashLink
+                smooth
+                to="/#projects"
+                className="btn btn-default btn-border"
+              >
                 Portfolio
-              </Link>
+              </HashLink>
             </div>
           </div>
         </div>
