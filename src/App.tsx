@@ -1,11 +1,12 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio/Portfolio";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Home></Home>
         </Route>
       </Switch>
+      <Footer></Footer>
     </div>
   );
 }

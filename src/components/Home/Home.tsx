@@ -1,5 +1,9 @@
 import React from "react";
 import "./home.css";
+import dd_svg from "../static/img/developerdesign.svg";
+import rd_svg from "../static/img/responsivedesign.svg";
+import is_svg from "../static/img/innovativesolutions.svg";
+import p_svg from "../static/img/passion.svg";
 
 export default function Home() {
   return (
@@ -109,10 +113,7 @@ export default function Home() {
             <div className="development-summary">
               <div className="col-sm-1 col-md-1">
                 <div className="development-img">
-                  <img
-                    className="img-responsive"
-                    src="./images/developerdesign.svg"
-                  />
+                  <img className="img-responsive" src={dd_svg} />
                 </div>
               </div>
 
@@ -131,10 +132,7 @@ export default function Home() {
             <div className="responsive-summary">
               <div className="col-sm-1 col-md-1 col-sm-offset-2 col-md-offset-2">
                 <div className="responsive-img">
-                  <img
-                    className="img-responsive"
-                    src="./images/responsivedesign.svg"
-                  />
+                  <img className="img-responsive" src={rd_svg} />
                 </div>
               </div>
 
@@ -157,10 +155,7 @@ export default function Home() {
             <div className="ideas-summary">
               <div className="col-sm-1 col-md-1">
                 <div className="idea-img">
-                  <img
-                    className="img-responsive"
-                    src="./images/innovativesolutions.svg"
-                  />
+                  <img className="img-responsive" src={is_svg} />
                 </div>
               </div>
 
@@ -179,7 +174,7 @@ export default function Home() {
 
             <div className="passion-summary">
               <div className="col-sm-1 col-md-1 col-sm-offset-2 col-md-offset-2">
-                <img className="img-responsive" src="./images/passion.svg" />
+                <img className="img-responsive" src={p_svg} />
               </div>
 
               <div className="col-sm-4 col-md-4">
