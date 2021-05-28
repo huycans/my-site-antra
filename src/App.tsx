@@ -1,12 +1,13 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "./App.css";
 import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
+
+//styles of bootstraps 3.3.7
+import "./lib/boostrap/css/bootstrap.min.css";
 
 function App() {
   return (
