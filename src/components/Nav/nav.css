@@ -12,7 +12,7 @@
 .primary-nav {
   padding-right: 50px;
 }
-.primary-nav li {
+.primary-nav div {
   display: inline-block;
   margin: 0px 20px;
   color: white;
@@ -32,4 +32,9 @@
   text-decoration: none;
   color: white;
   border-bottom: 2px solid #f5f5f5;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
 }
