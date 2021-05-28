@@ -1,0 +1,23 @@
+/* Main banner */
+.main {
+  background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)),
+    url(../static/img/apple-1838564_1920-main.jpg); /* Browser prefixes*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 14.7% 0; /* Center contents within the container, make background image cover*/
+  color: white;
+}
+
+.entry-banner h1 {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+#hello {
+  font-size: 28pt;
+}
+#name {
+  font-size: 100pt;
+}
+#person-description {
+  font-size: 33pt;
+}
