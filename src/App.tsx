@@ -5,11 +5,13 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Nav from "./components/Nav/Nav";
 
 function App() {
   return (
     <div className="App">
       <Switch>
+        <Nav></Nav>
         <Route exact path="/Contact">
           <Contact></Contact>
         </Route>
