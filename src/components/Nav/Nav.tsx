@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./nav.css";
+import logo from "../static/img/logo.svg";
 
 export default function Nav() {
   return (
@@ -10,7 +11,7 @@ export default function Nav() {
           <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
             <div className="logo">
               <a href="index.html">
-                <img src="images/logo.svg" />
+                <img src={logo} />
               </a>
             </div>
           </div>
