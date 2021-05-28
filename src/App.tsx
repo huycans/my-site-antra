@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Contact from "./components/Contact";
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
 import Portfolio from "./components/Portfolio";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Nav from "./components/Nav/Nav";
@@ -10,9 +10,9 @@ import Nav from "./components/Nav/Nav";
 function App() {
   return (
     <div className="App">
+      <Nav></Nav>
       <Switch>
-        <Nav></Nav>
-        <Route exact path="/Contact">
+        <Route exact path="/contact">
           <Contact></Contact>
         </Route>
         <Route exact path="/portfolio">
