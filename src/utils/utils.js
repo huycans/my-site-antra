@@ -1,0 +1,1 @@
+export const emptyLink = (location) => `${location.pathname}`;

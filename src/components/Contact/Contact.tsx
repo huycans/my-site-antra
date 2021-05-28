@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { emptyLink } from "../../utils/utils";
 import "./contact.css";
 
 export default function Contact() {
@@ -85,9 +87,12 @@ export default function Contact() {
                 <div className="row">
                   <div className="col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
                     <div className="submit-contact">
-                      <a className="btn btn-default btn-border" href="#">
+                      <Link
+                        to={emptyLink}
+                        className="btn btn-default btn-border"
+                      >
                         Submit
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

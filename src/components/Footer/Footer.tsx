@@ -1,9 +1,13 @@
 import React from "react";
-import "./footer.css";
+import { Link } from "react-router-dom";
 import fb_svg from "../static/img/facebook.svg";
 import lk_svg from "../static/img/linkedin.svg";
 import pt_svg from "../static/img/pinterest.svg";
 import em_svg from "../static/img/email.svg";
+
+import { emptyLink } from "../../utils/utils";
+
+import "./footer.css";
 
 export default function Footer() {
   return (
@@ -13,33 +17,33 @@ export default function Footer() {
           <div className="media-links">
             <div className="col-sm-1 col-md-1 col-sm-offset-4 col-md-offset-4">
               <div className="facebook">
-                <a href="#">
+                <Link to={emptyLink}>
                   <img className="img-responsive" src={fb_svg} />
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className="col-sm-1 col-md-1">
               <div className="linkedin">
-                <a href="#">
+                <Link to={emptyLink}>
                   <img className="img-responsive" src={lk_svg} />
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className="col-sm-1 col-md-1">
               <div className="pinterest">
-                <a href="#">
+                <Link to={emptyLink}>
                   <img className="img-responsive" src={pt_svg} />
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className="col-sm-1 col-md-1">
               <div className="email-icon">
-                <a href="#">
+                <Link to={emptyLink}>
                   <img className="img-responsive" src={em_svg} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -71,7 +75,7 @@ export default function Footer() {
           <div className="col-sm-2 col-md-2 text-center">
             <div className="home-footer">
               <h4>
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
               </h4>
             </div>
           </div>
@@ -79,20 +83,20 @@ export default function Footer() {
           <div className="col-sm-2 col-md-2 text-center">
             <div className="portfolio-footer">
               <h4>
-                <a href="#">Portfolio</a>
+                <Link to="/portfolio">Portfolio</Link>
               </h4>
               <ul>
                 <li>
-                  <a href="#">Project1</a>
+                  <Link to={emptyLink}>Project1</Link>
                 </li>
                 <li>
-                  <a href="#">Project2</a>
+                  <Link to={emptyLink}>Project2</Link>
                 </li>
                 <li>
-                  <a href="#">Project3</a>
+                  <Link to={emptyLink}>Project3</Link>
                 </li>
                 <li>
-                  <a href="#">See All</a>
+                  <Link to={emptyLink}>See All</Link>
                 </li>
               </ul>
             </div>
@@ -101,11 +105,11 @@ export default function Footer() {
           <div className="col-sm-2 col-md-2 text-center">
             <div className="resume-footer">
               <h4>
-                <a href="#">Resume</a>
+                <Link to={emptyLink}>Resume</Link>
               </h4>
               <ul>
                 <li>
-                  <a href="#">Download</a>
+                  <Link to={emptyLink}>Download</Link>
                 </li>
               </ul>
             </div>
@@ -114,7 +118,7 @@ export default function Footer() {
           <div className="col-sm-2 col-md-2 text-center">
             <div className="contact-footer">
               <h4>
-                <a href="#">Contact</a>
+                <Link to="contact">Contact</Link>
               </h4>
             </div>
           </div>
