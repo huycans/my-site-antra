@@ -39,7 +39,17 @@ textarea {
   padding: 10px;
   margin: 3px 0px;
 }
-
+.submit-contact {
+  display: flex;
+  justify-content: center;
+}
 .submit-contact .btn-border {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .contact {
+    padding-top: 30vh;
+    padding-bottom: 15px;
+  }
 }

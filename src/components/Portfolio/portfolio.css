@@ -56,7 +56,17 @@
 .endorsements h4 {
   border-bottom: 1px solid black;
 }
-
+.see-more-button {
+  display: flex;
+  justify-content: center;
+}
 .project-more-btn {
   margin-top: 10px !important;
+}
+
+@media screen and (max-width: 760px) {
+  .projects {
+    padding-top: 30vh;
+    padding-bottom: 15px;
+  }
 }

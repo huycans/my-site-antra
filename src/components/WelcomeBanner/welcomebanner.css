@@ -21,3 +21,10 @@
 #person-description {
   font-size: 33pt;
 }
+
+@media screen and (max-width: 760px) {
+  .main {
+    padding-top: 30vh;
+    padding-bottom: 15px;
+  }
+}
